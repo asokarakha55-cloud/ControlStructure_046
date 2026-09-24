@@ -1,12 +1,9 @@
-a = int(input("Masukkan angka pertama: "))
-b = int(input("Masukkan angka kedua: "))
-c = int(input("Masukkan angka ketiga: "))
+n = int(input("Masukkan jumlah suku (n): "))
 
-if a >= b and a >= c:
-    terbesar = a
-elif b >= a and b >= c:
-    terbesar = b
-else:
-    terbesar = c
+a, b = 0, 1
 
-print(f"Angka terbesar adalah: {terbesar}")
+print(f"Deret Fibonacci hingga {n} suku:")
+for i in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
+print()  
