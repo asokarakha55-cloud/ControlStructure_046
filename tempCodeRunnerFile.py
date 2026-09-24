@@ -1,9 +1,7 @@
-n = int(input("Masukkan jumlah suku (n): "))
+n = int(input("Masukkan batas nilai (n): "))
 
-a, b = 0, 1
-
-print(f"Deret Fibonacci hingga {n} suku:")
-for i in range(n):
-    print(a, end=" ")
-    a, b = b, a + b
-print()  
+print(f"Angka ganjil dari 1 sampai {n}:")
+# Menggunakan perulangan dengan step 2 dari angka 1
+for i in range(1, n + 1, 2):
+    print(i, end=" ")
+print()
